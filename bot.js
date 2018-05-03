@@ -17,9 +17,16 @@ Client.on('message',(message)=>{
     if(message.content.startsWith(prefix + "help")){
         message.channel.send({embed:{
             color: 0x28d62b,
-            description: "RelaXCraft Help", description: "General Commands", description: "!help - Display this message", description: "!ip - Show RelaXCraft server ip", description: "", description: "Staff Commands", description: "!delete 1-100 - Delete message"
+            description: "RelaXCraft Help",
+            description: "General Commands",
+            description: "!help - Display this message",
+            description: "!ip - Show RelaXCraft server ip",
+            description: "",
+            description: "Staff Commands",
+            description: "!delete 1-100 - Delete message",
             
         }})
+        
         
         
 
@@ -27,7 +34,7 @@ Client.on('message',(message)=>{
     if(message.content.startsWith(prefix + "ip")){
         message.channel.send({embed:{
             color: 0x28d62b,
-            description: message.author + "RelaXCraft server ip is relaxcraft.mcalias.com"
+            description: message.author + " RelaXCraft server ip is relaxcraft.mcalias.com"
         }})
     }
     
