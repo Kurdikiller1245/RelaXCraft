@@ -28,8 +28,6 @@ message.channel.send({embed: {
     fields: [{
         name: "General Commands",
         value: "!help - Display this message",
-        value: "!ip - show relaxcraft server ip",
-        value: "!hello"
       },
       {
         name: "Staff Command",
