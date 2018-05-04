@@ -13,7 +13,7 @@ Client.on('message',(message)=>{
     if(message.content.startsWith(prefix + "hello")){
         message.channel.send("Hello, " + message.author + " how are you doing?");
     }
-
+    if(message.content.startsWith(prefix + "help")){
 message.channel.send({embed: {
     color: 0x28d62b,
     author: {
@@ -40,6 +40,7 @@ message.channel.send({embed: {
     }
   }
 });
+}
         
         
         
