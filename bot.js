@@ -25,8 +25,8 @@ message.channel.send({embed: {
     fields: [{
         name: "General Commands",
         value: "!help - Display this message"
-        value: "!ip - show relaxcraft server ip"
-        value: "!hello"
+        ,value: "!ip - show relaxcraft server ip"
+        ,value: "!hello"
       },
       {
         name: "Staff Command",
@@ -44,7 +44,7 @@ message.channel.send({embed: {
         
         
 
-    }
+    
     if(message.content.startsWith(prefix + "ip")){
         message.channel.send({embed:{
             color: 0x28d62b,
