@@ -14,18 +14,32 @@ Client.on('message',(message)=>{
         message.channel.send("Hello, " + message.author + " how are you doing?");
     }
 
-    if(message.content.startsWith(prefix + "help")){
-        message.channel.send({embed:{
-            color: 0x28d62b,
-            description: "RelaXCraft Help",
-            description: "General Commands",
-            description: "!help - Display this message",
-            description: "!ip - Show RelaXCraft server ip",
-            description: "",
-            description: "Staff Commands",
-            description: "!delete 1-100 - Delete message",
-            
-        }})
+message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "RelaXCraft Help",
+    description: "",
+    fields: [{
+        name: "General Commands",
+        value: "!help - Display this message"
+        value: "!ip - show relaxcraft server ip"
+        value: "!hello"
+      },
+      {
+        name: "Staff Command",
+        value: "/delete 1-100 - delete message"
+      },
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© X_Just_RelaX_X"
+    }
+  }
+});
         
         
         
