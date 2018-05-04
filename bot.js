@@ -21,7 +21,7 @@ message.channel.send({embed: {
       icon_url: client.user.avatarURL
     },
     title: "RelaXCraft Help",
-    description: "",
+    description: "RelaXCraft Help",
     fields: [{
         name: "General Commands",
         value: "!help - Display this message",
