@@ -3,7 +3,10 @@ const Client = new Discord.Client();
 const prefix = "!";
 
 Client.on('ready', ()=>{
-   console.log("Bot is online."); 
+   console.log("Bot is online.");
+   
+   bot.user.setStatus('Online')
+   bot.user.setgame('!help')
 })
 
 
