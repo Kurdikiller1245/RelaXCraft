@@ -24,8 +24,8 @@ message.channel.send({embed: {
     description: "",
     fields: [{
         name: "General Commands",
-        value: "!help - Display this message"
-        value: "!ip - show relaxcraft server ip"
+        value: "!help - Display this message",
+        value: "!ip - show relaxcraft server ip",
         value: "!hello"
       },
       {
