@@ -5,7 +5,7 @@ const prefix = "!";
 client.on('ready', ()=>{
    console.log("Bot is online.");
 
-   client.user.setPresence({ game: { name: '!help', type: 0 } });
+   client.user.setPresence({ game: { name: 'Use !help', type: 0 } });
 })
 
 
