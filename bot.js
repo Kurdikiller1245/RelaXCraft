@@ -6,7 +6,7 @@ Client.on('ready', ()=>{
    console.log("Bot is online.");
    
    client.user.setStatus('Online')
-   bot.user.setPresence({ game: { name: '!help', type: 0 } });
+   client.user.setPresence({ game: { name: '!help', type: 0 } });
 })
 
 
