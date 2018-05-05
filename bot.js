@@ -4,13 +4,12 @@ const prefix = "!";
 
 client.on('ready', ()=>{
    console.log("Bot is online.");
-   
-   client.user.setStatus('Online')
+
    client.user.setPresence({ game: { name: '!help', type: 0 } });
 })
 
 
-Client.on('message',(message)=>{
+client.on('message',(message)=>{
     if(!message.content.startsWith(prefix)) return;
 
     if(message.content.startsWith(prefix + "hello")){
