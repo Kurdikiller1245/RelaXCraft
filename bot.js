@@ -15,16 +15,14 @@ client.on('message',(message)=>{
     if(message.content.startsWith(prefix + "hello")){
         message.channel.send("Hello, " + message.author + " how are you doing?");
     }
-    if(message.content.startsWith(prefix + "help"))
+if(message.content.startsWith(prefix + "help"))
 {
     const embed = new Discord.RichEmbed()
     .setColor("0x28d62b")
-    .setAuthor(message.author.tag, message.author.avatarURL)
-    .setTitle("RelaXCraft Help")
-    .setDescription("RelaXCraft Help")
+    .setAuthor(message.author.tag, message.author.avatarURL) 
     .addField("General Commands", "!help - Display this message \n !ip - show RelaXCraft ip \n !hello")
     .addField("Staff commands", "/delete 1-100 - deletes all the messages in the specified number")
-    .setFooter("© X_Just_RelaX_X", client.user.avatarURL)
+    .setFooter("X_Just_RelaX_X", client.user.avatarURL)
 message.channel.send(embed)
 }
         
