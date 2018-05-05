@@ -24,14 +24,14 @@ message.channel.send({embed: {
       icon_url: message.author.avatarURL
     },
     title: "RelaXCraft Help",
-    description: "RelaXCraft Help",
+    description: "",
     fields: [{
         name: "General Commands",
-        value: "!help - Display this message /n !ip - show RelaXCraft server ip /n !hello",
+        value: "!help - Display this message \n !ip - show RelaXCraft ip \n !hello",
       },
       {
         name: "Staff Command",
-        value: "/delete 1-100 - delete message"
+        value: "!delete 1-100 - deletes all the messages in the specified number"
       },
     ],
     timestamp: new Date(),
