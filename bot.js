@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
-const Client = new Discord.Client();
+const client = new Discord.Client();
 const prefix = "!";
 
-Client.on('ready', ()=>{
+client.on('ready', ()=>{
    console.log("Bot is online.");
    
    client.user.setStatus('Online')
