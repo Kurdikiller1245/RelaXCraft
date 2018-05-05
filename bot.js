@@ -15,36 +15,19 @@ client.on('message',(message)=>{
     if(message.content.startsWith(prefix + "hello")){
         message.channel.send("Hello, " + message.author + " how are you doing?");
     }
-if(message.content.startsWith(prefix + "help")){
-message.channel.send({embed: {
-    color: 0x28d62b,
-    author: {
-      name: "RelaXCraft",
-      icon_url: message.author.avatarURL
-    },
-    title: "General Commands",
-    description: "!help - Display this message",
-    fields: [{
-        name: "",
-        value: "!ip - show RelaXCraft server ip /n !hello",
-      },
-      {
-        name: "Staff Command",
-        value: "/delete 1-100 - delete message"
-      },
-    ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: client.user.avatarURL,
-      text: "© X_Just_RelaX_X"
-    }
-  }
-});
+if(message.content == prefix + "help")
+{
+    const embed = new Discord.RichEmbed()
+    .setColor(0x28d62b)
+    .setAuthor(message.author.tag, message.author.avatarURL)
+    .addField("RelaXCraft Help")
+    .addField("General Commands", "!help - Display this message \n !ip - show RelaXCraft ip \n !hello")
+    .addField("Staff commands", "/delete 1-100 - deletes all the messages in the specified number")
+    .setFooter("X_Just_RelaX_X", message.author.avatarURL)
+message.channel.send(embed)
 }
         
         
-        
-
     
     if(message.content.startsWith(prefix + "ip")){
         message.channel.send({embed:{
