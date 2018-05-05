@@ -20,14 +20,14 @@ client.on('message',(message)=>{
 message.channel.send({embed: {
     color: 0x28d62b,
     author: {
-      name: "RelaXCraft",
+      name: message.author.tag,
       icon_url: message.author.avatarURL
     },
-    title: "General Commands",
-    description: "!help - Display this message",
+    title: "RelaXCraft Help",
+    description: "RelaXCraft Help",
     fields: [{
-        name: "",
-        value: "!ip - show RelaXCraft server ip /n !hello",
+        name: "General Commands",
+        value: "!help - Display this message /n !ip - show RelaXCraft server ip /n !hello",
       },
       {
         name: "Staff Command",
