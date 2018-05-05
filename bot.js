@@ -20,8 +20,8 @@ Client.on('message',(message)=>{
 message.channel.send({embed: {
     color: 0x28d62b,
     author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
+      name: message.author.tag,
+      icon_url: message.author.avatarURL
     },
     title: "RelaXCraft Help",
     description: "RelaXCraft Help",
