@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "!";
+const prefix = "!!";
 
 client.on('ready', ()=>{
    console.log("Bot is online.");
 
-   client.user.setPresence({ game: { name: 'Use !help', type: 0 } });
+   client.user.setPresence({ game: { name: 'Use !!help', type: 0 } });
 })
 
 
@@ -27,11 +27,11 @@ message.channel.send({embed: {
     description: "",
     fields: [{
         name: "General Commands",
-        value: "!help - Display this message \n!ip - show RelaXCraft ip \n!hello \n!s add - add a suggestion",
+        value: "!!help - Display this message \n!!ip - show RelaXCraft ip \n!!hello \n!s add - add a suggestion",
       },
       {
         name: "Staff Command",
-        value: "!delete 1-100 - deletes all the messages in the specified number"
+        value: "!!delete 1-100 - deletes all the messages in the specified number"
       },
     ],
     timestamp: new Date(),
