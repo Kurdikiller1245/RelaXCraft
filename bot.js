@@ -27,7 +27,7 @@ message.channel.send({embed: {
     description: "",
     fields: [{
         name: "General Commands",
-        value: "!!help - Display this message \n!!ip - show RelaXCraft ip \n!!hello \n!s add - add a suggestion",
+        value: "!!help - Display this message \n!!ip - show RelaXCraft ip \n!!hello \n!s add - add a suggestion \n/apply- apply for helper",
       },
       {
         name: "Staff Command",
