@@ -51,11 +51,10 @@ message.channel.send({embed: {
                 name: message.author.tag,
                 icon_url: message.author.avatarURL
               },
-              title: "RelaXCraft Info",
               description: "",
               fields: [{
                   name: "Server Info",
-                  value: "Server ip: Play.RelaXCraft.Org\nForum: Www.RelaXCraft.Org",
+                  value: "getBold(Server ip:) Play.RelaXCraft.Org\nForum: Www.RelaXCraft.Org",
                 },
                 
               ],
