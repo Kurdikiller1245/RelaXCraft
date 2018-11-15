@@ -54,7 +54,7 @@ message.channel.send({embed: {
               description: "",
               fields: [{
                   name: "Server Info",
-                  value: "getBold(Server ip:) Play.RelaXCraft.Org\nForum: Www.RelaXCraft.Org",
+                  value: "Server ip: Play.RelaXCraft.Org\nForum: Www.RelaXCraft.Org",
                 },
                 
               ],
