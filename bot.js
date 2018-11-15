@@ -8,7 +8,6 @@ client.on('ready', ()=>{
    client.user.setPresence({ game: { name: 'Use !!help', type: 0 } });
 })
 
-
 client.on('message',(message)=>{
     if(!message.content.startsWith(prefix)) return;
 
@@ -48,7 +47,24 @@ message.channel.send({embed: {
     if(message.content.startsWith(prefix + "ip")){
         message.channel.send({embed:{
             color: 0x28d62b,
-            description: message.author + " RelaXCraft server ip is play.relaxcraft.org"
+            author: {
+                name: message.author.tag,
+                icon_url: message.author.avatarURL
+              },
+              title: "RelaXCraft Info",
+              description: "",
+              fields: [{
+                  name: "Server Info",
+                  value: "Server ip: Play.RelaXCraft.Org\nForum: Www.RelaXCraft.Org",
+                },
+                
+              ],
+              timestamp: new Date(),
+              footer: {
+                icon_url: client.user.avatarURL,
+                text: "© X_Just_RelaX_X"
+              }
+            
         }})
     }
     
@@ -83,4 +99,3 @@ message.channel.send({embed: {
 )
 
 client.login(process.env.BOT_TOKEN);
-
