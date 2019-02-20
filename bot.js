@@ -5,7 +5,7 @@ const prefix = "!!";
 client.on('ready', ()=>{
    console.log("Bot is online.");
 
-   client.user.setPresence({ game: { name: 'Use !!help', type: 0 } });
+   client.user.setPresence({ game: { name: 'play.relaxcraft.org | !!help', type: 0 } });
 })
 
 client.on('message',(message)=>{
